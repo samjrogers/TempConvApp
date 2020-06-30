@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Temperature Convertor</title>
-<meta name="description" content="Temperature Convertor">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="UTF-8">
+    <title>Temperature Convertor</title>
+    <meta name="description" content="Temperature Convertor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<style>
+    <style>
 body
   {
     font-family: Arial, Helvetica, sans-serif;
@@ -36,10 +36,11 @@ p
   }
 input
   {
-    min-height:25px;
+    min-height:50px;
+    font-size:25px;
   }
 </style>
-<script>
+    <script>
   function f2c (tempIn) {
     document.getElementById('cin').value = (tempIn-32)/1.8;
   }
@@ -50,11 +51,10 @@ input
 </script>
 </head>
 <body>
-<h1>Temperature Convertor</h1>
 <h2>F°</h2>
 <p>
-  <input id="fin" type="number" placeholder="Fahrenheit" oninput="f2c(this.value)">
-  <input id="cin" type="number" placeholder="Celsius" oninput="c2f(this.value)">
+    <input id="fin" type="number" placeholder="Fahrenheit" oninput="f2c(this.value)">
+    <input id="cin" type="number" placeholder="Celsius" oninput="c2f(this.value)">
 </p>
 <h2>C°</h2>
 </body>
